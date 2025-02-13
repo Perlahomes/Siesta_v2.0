@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+
+    <title>Perla Homes</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Main Content Section -->
+    <div class="content-container">
+        <!-- Language Selector -->
+        <div id="google_translate_element" class="fade-in"></div>
+        <img src="images/perla logo site.png" alt="Perla Homes Logo" id="logo" class="fade-in" />
+
+        <h1 id="main-heading" class="fade-in" translate="no">
+            Welcome to <br>Siesta
+        </h1>
+       
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <div class="button-item fade-in">
+                <button class="round-btn" onclick="window.location.href='check_in.html'">
+                    <img src="images/Checkin.png" alt="Check-In">
+                </button>
+                <span>Check-In <br> </span>
+            </div>
+
+            <div class="button-item fade-in">
+                <button class="round-btn" onclick="showWifiCodeBox()">
+                    <img src="images/wifi2.png" alt="Wifi">
+                </button>
+                <span>WiFi Code</span>
+            </div>
+            
+            <!-- Hidden Wifi Code Box -->
+            <div id="wifiCodeBox" style="display:none; padding: 10px; background-color: #0e0d0d; border: 1px solid #ccc; width: 200px; height: auto; max-width: 100%; text-align: center; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <p> Network: <strong>Siesta2023</strong></p> <br>
+                <p> Password: <strong>Siesta2023!</strong></p>
+                <button onclick="hideWifiCodeBox()">EXIT</button>
+            </div>
+
+            <div class="button-item fade-in">
+                <button class="round-btn" onclick="showCodeBox()">
+                    <img src="images/Key lock Heavenmono.jpg" alt="Wifi">
+                </button>
+                <span>Code</span>
+            </div>
+            
+            <!-- Hidden Code Box -->
+            <div id="codeBox" style="display:none; padding: 10px; background-color: #0e0d0d; border: 1px solid #ccc; width: 200px; height: auto; max-width: 100%; text-align: center; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              
+                <p>Key Lock: <strong>1971</strong></p>
+                <button onclick="hideCodeBox()">EXIT</button>
+            </div>
+            
+            
+            <div class="button-item fade-in">
+                <a href="https://www.google.com/maps/place/%CE%9A%CE%BF%CF%81%CE%B1%CE%AE+12,+%CE%9A%CE%B1%CE%BB%CE%B1%CE%BC%CE%AC%CF%84%CE%B1+241+00/@37.03218,22.112127,3333m/data=!3m1!1e3!4m6!3m5!1s0x1361b09dccaeb71d:0xcbd0fa7e826dff7c!8m2!3d37.0321797!4d22.1121274!16s%2Fg%2F11csfycnyg?hl=el&entry=ttu&g_ep=EgoyMDI1MDIxMC4wIKXMDSoASAFQAw%3D%3D">
+                    <img src="images/map.jpg" alt="Mobi" class="round-btn">
+                    <span>Map</span>
+                </a>
+            </div>
+            <div class="button-item fade-in">
+                <a href="https://messinia.mobi/el">
+                    <img src="images/optiki-tautotita_2.jpg" alt="Mobi" class="round-btn">
+                    <span style="display:block;">Tourist<br>Guide</span>
+                </a>
+            </div>
+            
+            <div class="button-item fade-in">
+                <a href="contacts.html">
+                    <button class="round-btn">
+                        <img src="images/pngtree-circle-phone-call-icon-in-black-color-png-image_6596895.png" alt="Map">
+                    </button>
+                    <span>Contacts</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer fade-in">
+        <a href="https://www.perlahomes.gr" target="_blank">Perlahomes.gr</a>
+        <p>&copy; 2025 Perla Homes. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,en,el,it,pt,ro,es,fr,ka,de,cs,hy,sq,ru', // Add more languages as needed
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
